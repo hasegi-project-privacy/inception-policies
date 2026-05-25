@@ -18,7 +18,7 @@
 </head>
 <body>
   <h1>Inception Privacy Policy</h1>
-  <p class="meta">Last updated: 2026-05-20 · Effective: 2026-05-20</p>
+  <p class="meta">Last updated: 2026-05-25 · Effective: 2026-05-25</p>
 
   <p>Hasegi Inc. ("we") values your privacy and complies with the Personal Information Protection Act of the Republic of Korea and relevant laws.</p>
 
@@ -34,12 +34,21 @@
   <h2>2. Purposes</h2>
   <ul>
     <li>Preserve learning progress (locally on device)</li>
-    <li>Deliver personalized advertising (only when tracking is permitted)</li>
+    <li>Deliver non-personalized advertising — to protect children and minor users, we do not use advertising-identifier-based tracking, profiling, or personalized ads</li>
     <li>Improve service quality and statistical analysis</li>
   </ul>
 
-  <h2>3. Advertising SDK</h2>
-  <p>The Service uses Google AdMob. AdMob delivers ads using non-personally-identifiable advertising IDs. You can opt out at any time:</p>
+  <h2>3. Advertising SDK and Child Safety Policy</h2>
+  <p>The Service uses Google AdMob to display ads. Because this is a learning app that may be used by children, the following protections are applied app-wide to every ad request:</p>
+  <ul>
+    <li><strong>Ad content rating</strong>: G (General audiences) — only content appropriate for all ages is shown (<code>MaxAdContentRating.g</code>)</li>
+    <li><strong>Child-directed treatment (COPPA)</strong>: enabled (<code>tagForChildDirectedTreatment.yes</code>)</li>
+    <li><strong>Under-age-of-consent protection (GDPR-K)</strong>: enabled (<code>tagForUnderAgeOfConsent.yes</code>)</li>
+    <li><strong>Non-personalized ads only</strong>: with the above settings, advertising-identifier-based tracking and profiling are blocked; only non-personalized ads are served</li>
+    <li><strong>Sensitive category blocking</strong>: in the AdMob console we additionally block sensitive categories including dating, gambling, alcohol, politics, religion, consumer loans, weight loss, pharmaceuticals, astrology, cosmetic surgery, body modification, sexual references, get-rich-quick, etc.</li>
+  </ul>
+  <p>These policies are designed to satisfy <strong>Google Play Families Policy</strong> and <strong>Apple App Store Kids / COPPA guidance</strong>.</p>
+  <p>You can additionally disable the advertising identifier through your device settings:</p>
   <ul>
     <li>iOS: Settings → Privacy → Tracking → toggle off "Inception"</li>
     <li>Android: Settings → Google → Ads → "Reset advertising ID" / "Opt out of personalized ads"</li>
@@ -62,7 +71,14 @@
   <p>You may opt out of advertising identifier use at any time. To delete your learning data, simply uninstall the app. For additional rights, contact us below.</p>
 
   <h2>9. Children Under 14</h2>
-  <p>The Service is available to children under 14, but since we do not collect identifiable personal information, no separate guardian consent process is implemented.</p>
+  <p>The Service is designed to be usable by children under 14. We do not collect identifiable personal information, so no separate guardian consent process is implemented. Additionally, the following protections are applied app-wide:</p>
+  <ul>
+    <li>COPPA <code>tagForChildDirectedTreatment.yes</code> applied to every ad request</li>
+    <li>GDPR-K <code>tagForUnderAgeOfConsent.yes</code> applied to every ad request</li>
+    <li>Ad content rating restricted to G (General audiences) — content inappropriate for children is blocked</li>
+    <li>No advertising-identifier-based personalized ads or profiling</li>
+  </ul>
+  <p>See Section 3 (Advertising SDK and Child Safety Policy) above for details.</p>
 
   <h2>10. Changes to This Policy</h2>
   <p>We may revise this Policy in response to legal or service changes; revisions take effect upon posting on this page.</p>
